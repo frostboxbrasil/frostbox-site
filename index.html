@@ -130,13 +130,19 @@ html,body{background:#f5fbff;color:#15384a}.app-root{background:#f5fbff!importan
 .btn-primary{background:linear-gradient(135deg,#16b8d3,#078dbd)!important;border-radius:999px!important;box-shadow:0 9px 23px #078dbd26!important}.nav-link{background:#f2fbff!important;border-color:#d8eaf1!important;color:#214c60!important;border-radius:999px!important}
 @media(max-width:850px){.showcase-card{min-height:260px!important}}@media(max-width:520px){.brand-name{font-size:16px!important;letter-spacing:2.2px!important}.showcase-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:11px!important}.showcase-card{min-height:235px!important;border-radius:15px!important}.showcase-card .showcase-info{padding:10px!important}.showcase-info h3{font-size:16px!important}.showcase-info p{font-size:10px!important}}
 
+/* Cabeçalho: wordmark limpo; não simular o arquivo oficial do logotipo. */
+.topbar .brand{display:flex;align-items:center;min-width:0;gap:0!important}
+.topbar .brand-name{display:flex;flex-direction:column;gap:2px;padding-left:0!important;font-size:20px!important;font-weight:950!important;line-height:1!important;letter-spacing:3px!important;color:#143b50!important}
+.topbar .brand-name:before{display:none!important;content:none!important}
+.topbar .brand-sub{display:block;font-size:8px;font-weight:800;letter-spacing:2.5px;color:#078dbd;margin-top:3px}
+@media(max-width:520px){.topbar .brand-name{font-size:17px!important;letter-spacing:2.4px!important}.topbar .brand-sub{font-size:7px;letter-spacing:2px}}
 </style>
 </head>
 <body>
 <div role="note" style="background:#102b3b;color:#d9f3ff;border-bottom:1px solid #2d6785;padding:9px 18px;text-align:center;font-size:12px;line-height:1.5">PRÉVIA PARA APROVAÇÃO · Ainda não recebe pedidos reais. Pagamentos, cadastro e painel são demonstrativos; nenhuma cobrança é feita.</div>
 <div class="app-root" id="storeApp">
 <header class="topbar">
- <a href="#inicio" class="brand" aria-label="FROSTBOX início"><div class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.7" stroke-linecap="round"><path d="M12 2v20M4 7l16 10M4 17 20 7M7.5 3.5 12 6l4.5-2.5M7.5 20.5 12 18l4.5 2.5M3 9l4.5-1.5L6 3M21 15l-4.5 1.5L18 21M3 15l4.5 1.5L6 21M21 9l-4.5-1.5L18 3"/></svg></div><div><div class="brand-name">FROSTBOX</div><div class="brand-sub">BRASIL</div></div></a>
+ <a href="#inicio" class="brand" aria-label="FROSTBOX início"><span class="brand-name">FROSTBOX<span class="brand-sub">GELO SABORIZADO</span></span></a>
  <div class="nav-actions"><button class="nav-link" onclick="showStore()">Loja</button><button class="nav-link" onclick="showAdmin()">Painel da equipe ↗</button></div>
 </header>
 <main id="storeMain">
